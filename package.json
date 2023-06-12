@@ -1,6 +1,6 @@
 {
-  "name": "robofriends",
-  "homepage": "https://dominoto.github.io/robofriends",
+  "name": "robofriends-hooks",
+  "homepage": "https://dominoto.github.io/robofriends-hooks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
