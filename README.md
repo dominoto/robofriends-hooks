@@ -1,5 +1,8 @@
 Doing a React exercise from "The Complete Web Developer in 2023: Zero to Mastery" course. The previously made app that uses class-based approach is used, and converted to hooks-based without diminishing functionality.
 
+Robofriends Class components based website: https://dominoto.github.io/robofriends/
+Robofriends Functional components based (hooks) website: https://dominoto.github.io/robofriends-hooks/
+
 
 # Getting Started with Create React App
 
