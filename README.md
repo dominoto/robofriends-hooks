@@ -1,4 +1,4 @@
-Doing a React exercise from "The Complete Web Developer in 2022: Zero to Mastery" course.
+Doing a React exercise from "The Complete Web Developer in 2023: Zero to Mastery" course. The previously made app that uses class-based approach is used, and converted to hooks-based without diminishing functionality.
 
 
 # Getting Started with Create React App
