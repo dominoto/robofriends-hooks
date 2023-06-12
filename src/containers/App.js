@@ -2,8 +2,18 @@ import React, { useState, useEffect } from "react"; // import hooks
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
-import ErrorBoundary from "../components/ErrorBoundary";
+import { ErrorBoundary } from "react-error-boundary";
 import "./App.css";
+
+// use react-error-boundary instead of custom ErrorBoundary.js class component
+function ErrorFallback({ error }) {
+  return (
+    <div>
+      <h1>Oooops. That's not good.</h1>
+      <pre style={{ color: "red" }}>{error.message}</pre>
+    </div>
+  );
+}
 
 export default function App() {
   // useState instead of this.state
@@ -34,7 +44,7 @@ export default function App() {
       <h1 className="f2">RoboFriends</h1>
       <SearchBox searchChange={onSearchChange} />
       <Scroll>
-        <ErrorBoundary>
+        <ErrorBoundary FallbackComponent={ErrorFallback}>
           <CardList robots={filteredRobots} />
         </ErrorBoundary>
       </Scroll>
